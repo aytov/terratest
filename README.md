@@ -1,21 +1,21 @@
-#Prerequisite:
-aws-cli/2.9.12 
-Python/3.9.11
-Terraform v1.3.9
-go version go1.20.1 linux/amd64
+#Prerequisite: <br>
+aws-cli/2.9.12 <br>
+Python/3.9.11<br>
+Terraform v1.3.9<br>
+go version go1.20.1 linux/amd64<br>
 
-#Steps:
-Assuming that you have everything but Go lang setup .. 
-Follow the steps here: https://go.dev/doc/install and install go version go1.20.1 linux/amd64
+#Steps:<br>
+Assuming that you have everything but Go lang setup .. <br>
+Follow the steps here: https://go.dev/doc/install and install go version go1.20.1 linux/amd64<br>
 
-#check that Go setup is ok
-cd terratest/examples-go/hello
-go mod init github.com/aytov/terratest/examples-go/hello
-go mod tidy
-go run .
+#check that Go setup is ok<br>
+cd terratest/examples-go/hello<br>
+go mod init github.com/aytov/terratest/examples-go/hello<br>
+go mod tidy<br>
+go run .<br>
 
-#run the terratests
-cd terratest/terratest/test
-go mod init github.com/aytov/terratest/terratest/test
-go mod tidy
-go test -v -timeout 30m
+#run the terratests<br>
+cd terratest/terratest/test<br>
+go mod init github.com/aytov/terratest/terratest/test<br>
+go mod tidy<br>
+go test -v -timeout 30m<br>
